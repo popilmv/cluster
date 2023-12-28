@@ -15,7 +15,4 @@ metadata:
   namespace: flux-system
   labels:
     app: reloader
-reloader:
-  deployment:
-    labels: 
-      version: v1.0.58
+
