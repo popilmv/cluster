@@ -58,3 +58,6 @@ spec:
       - secretRef:
           name: passwd
 ```
+
+![image](https://github.com/popilmv/cluster/assets/115075056/32aca4d2-b9ff-4cff-bd7f-894fbcf79b62)
+
