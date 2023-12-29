@@ -1,12 +1,12 @@
 provider "google" {
-  credentials = file("key.json")
-  project     = "high-territory-403908"
-  region      = "us-central1"
+  credentials = file("key.json") #key for auth in google account
+  project     = "high-territory-403908" #my id project
+  region      = "us-central1" #custom region 
 }
 
 resource "google_container_cluster" "my_cluster" {
   name     = "my-cluster"
-  location = "us-central1-a"
+  location = "us-central1-a" #our region + letter (a.b.c) 
 
   node_config {
     machine_type = "e2-medium"
