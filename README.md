@@ -48,3 +48,13 @@ stringData:
 Im k9s we can see our "secrets"  ![image](https://github.com/popilmv/cluster/assets/115075056/5b7e8d45-6f7a-4cc5-b17f-6cf2cbf4e3bd)
 and in google account - ![image](https://github.com/popilmv/cluster/assets/115075056/0d2d7e0e-4fd8-4131-ba42-733996b413a4)
 
+For export secret in some deployment - add:
+```
+spec:
+  containers:
+  - name: ubuntu-container
+    image: ubuntu
+    envFrom:
+      - secretRef:
+          name: passwd
+```
